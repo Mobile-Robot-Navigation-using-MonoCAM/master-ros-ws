@@ -1,0 +1,10 @@
+# ignore build and devel file:
+*/build/
+*/devel/
+
+#catkin files:
+*/.catkin_workspace
+.catkin_workspace
+
+# ignore IDE files:
+.vscode/
