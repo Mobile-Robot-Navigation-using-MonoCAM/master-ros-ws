@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_description_screen">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00101439548244005 -1.77195097993574E-17 -0.011717890229166"
+        rpy="0 0 0" />
+      <mass
+        value="0.445603187138702" />
+      <inertia
+        ixx="0.000414770751662671"
+        ixy="-3.75250843783372E-07"
+        ixz="-5.1747764846468E-08"
+        iyy="0.00062963996325537"
+        iyz="2.01837634386174E-07"
+        izz="0.000973911042109958" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_lw">
+    <inertial>
+      <origin
+        xyz="0.0525000000000001 0.0875 -0.0349999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="6.12375246774608E-24"
+        ixz="5.07876456086628E-24"
+        iyy="6.03169124573288E-08"
+        iyz="1.05300091978E-24"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/front_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/front_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="front_rw">
+    <inertial>
+      <origin
+        xyz="0.0525000000000001 -0.0875 -0.0349999999999998"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="5.91282141154506E-24"
+        ixz="5.932414953021E-24"
+        iyy="6.03169124573288E-08"
+        iyz="2.05967972525702E-25"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/front_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/front_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_lw">
+    <inertial>
+      <origin
+        xyz="-0.0524999999999999 0.0875 -0.035"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="5.48351467363004E-24"
+        ixz="-8.60418086658598E-25"
+        iyy="6.03169124573289E-08"
+        iyz="2.08449514363363E-25"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/rear_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/rear_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_rw">
+    <inertial>
+      <origin
+        xyz="-0.0525000000000001 -0.0875 -0.0349999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="5.69527291044362E-24"
+        ixz="1.68729820000473E-24"
+        iyy="6.03169124573289E-08"
+        iyz="2.08449514363362E-25"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/rear_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description_screen/meshes/rear_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

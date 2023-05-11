@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mobilerobot_screen_updated">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000810967858665785 1.81241032373575E-17 0.0444342290670525"
+        rpy="0 0 0" />
+      <mass
+        value="0.486203187138702" />
+      <inertia
+        ixx="0.000481101557057249"
+        ixy="-3.2696618474039E-07"
+        ixz="-3.25568358078485E-08"
+        iyy="0.000700788079922037"
+        iyz="9.07867673848143E-07"
+        izz="0.00111135502004871" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_lw">
+    <inertial>
+      <origin
+        xyz="0.0525000000000001 0.0875 0.0270000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="2.42494716220721E-24"
+        ixz="5.05895261584335E-24"
+        iyy="6.03169124573288E-08"
+        iyz="1.05217373916745E-24"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/front_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/front_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="front_rw">
+    <inertial>
+      <origin
+        xyz="0.0524999999999999 -0.0875 0.0270000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="2.42494716220721E-24"
+        ixz="4.84719437902978E-24"
+        iyy="6.03169124573288E-08"
+        iyz="1.05217373916745E-24"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/front_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/front_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_lw">
+    <inertial>
+      <origin
+        xyz="-0.0524999999999999 0.0875 0.0270000000000001"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="2.84184619093394E-24"
+        ixz="6.74302610392883E-24"
+        iyy="6.03169124573289E-08"
+        iyz="4.05318500150984E-25"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/rear_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/rear_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_rw">
+    <inertial>
+      <origin
+        xyz="-0.0525 -0.0875 0.027"
+        rpy="0 0 0" />
+      <mass
+        value="7.50019117729047E-05" />
+      <inertia
+        ixx="3.15647420744064E-08"
+        ixy="2.63008795412036E-24"
+        ixz="-3.32374741055698E-26"
+        iyy="6.03169124573289E-08"
+        iyz="1.98523347012726E-25"
+        izz="3.15647420744064E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/rear_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobilerobot_screen_updated/meshes/rear_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

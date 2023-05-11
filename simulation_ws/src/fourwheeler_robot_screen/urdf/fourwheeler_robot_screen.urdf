@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fourwheeler_robot_screen">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00206647074983284 -6.07230821784443E-05 0.0365949895446206"
+        rpy="0 0 0" />
+      <mass
+        value="1.30861421786989" />
+      <inertia
+        ixx="0.00118698540381072"
+        ixy="7.76288032047299E-07"
+        ixz="9.12225849751991E-08"
+        iyy="0.00251688426098245"
+        iyz="9.74881453619024E-07"
+        izz="0.00356546721181814" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_lw">
+    <inertial>
+      <origin
+        xyz="0.0650000000000002 0.0875 -0.0314999999999996"
+        rpy="0 0 0" />
+      <mass
+        value="5.73026500014778E-05" />
+      <inertia
+        ixx="1.87522922129836E-08"
+        ixy="6.30311626765408E-25"
+        ixz="1.15836951265248E-24"
+        iyy="3.53557350509118E-08"
+        iyz="4.23516473627146E-25"
+        izz="1.87522922129836E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/front_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/front_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+  <link
+    name="front_rw">
+    <inertial>
+      <origin
+        xyz="0.065 -0.0875 -0.0315"
+        rpy="0 0 0" />
+      <mass
+        value="5.73026500014778E-05" />
+      <inertia
+        ixx="1.87522922129836E-08"
+        ixy="8.37933960516216E-25"
+        ixz="1.96918584312631E-24"
+        iyy="3.53557350509118E-08"
+        iyz="9.54566426886194E-25"
+        izz="1.87522922129836E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/front_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/front_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+  <link
+    name="back_lw">
+    <inertial>
+      <origin
+        xyz="-0.045 0.0875 -0.0315"
+        rpy="0 0 0" />
+      <mass
+        value="5.73026500014779E-05" />
+      <inertia
+        ixx="1.87522922129836E-08"
+        ixy="7.19647132921139E-26"
+        ixz="7.81675985339809E-25"
+        iyy="3.53557350509118E-08"
+        iyz="-1.86942818436985E-25"
+        izz="1.87522922129836E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/back_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/back_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+  <link
+    name="back_rw">
+    <inertial>
+      <origin
+        xyz="-0.0450000000000001 -0.0875 -0.0315"
+        rpy="0 0 0" />
+      <mass
+        value="5.73026500014778E-05" />
+      <inertia
+        ixx="1.87522922129836E-08"
+        ixy="-2.10103875588469E-25"
+        ixz="8.53918579618948E-25"
+        iyy="3.53557350509118E-08"
+        iyz="3.15982993995257E-25"
+        izz="1.87522922129836E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/back_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fourwheeler_robot_screen/meshes/back_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+</robot>

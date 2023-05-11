@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="final_urdf_fourwheeler">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000387532227116392 -0.000173219779708905 0.0558182605423744"
+        rpy="0 0 0" />
+      <mass
+        value="2.21308511536271" />
+      <inertia
+        ixx="0.00327520778138025"
+        ixy="2.13044414248449E-07"
+        ixz="-1.94207222655302E-07"
+        iyy="0.00591554139457983"
+        iyz="4.24895475403773E-08"
+        izz="0.00855376592008038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_rw">
+    <inertial>
+      <origin
+        xyz="0.0675 -0.0925 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="7.37017636532166E-05" />
+      <inertia
+        ixx="3.15259294026634E-08"
+        ixy="5.70882465640418E-24"
+        ixz="2.50746644739091E-40"
+        iyy="6.02880426683312E-08"
+        iyz="3.08763268169525E-40"
+        izz="3.15259294026634E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/front_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/front_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="front_lw">
+    <inertial>
+      <origin
+        xyz="0.0674999999999993 0.0925 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="7.37017636532166E-05" />
+      <inertia
+        ixx="3.15259294026634E-08"
+        ixy="6.14557601983217E-24"
+        ixz="6.60384811910538E-24"
+        iyy="6.02880426683312E-08"
+        iyz="-7.67623608449211E-25"
+        izz="3.15259294026634E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/front_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/front_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_rw">
+    <inertial>
+      <origin
+        xyz="-0.0675 -0.0925 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="7.37017636532166E-05" />
+      <inertia
+        ixx="3.15259294026634E-08"
+        ixy="6.10587135042963E-24"
+        ixz="6.81689882562607E-24"
+        iyy="6.02880426683312E-08"
+        iyz="-8.33798057453453E-25"
+        izz="3.15259294026634E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/rear_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/rear_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_lw">
+    <inertial>
+      <origin
+        xyz="-0.0675 0.0925 0.025"
+        rpy="0 0 0" />
+      <mass
+        value="7.37017636532166E-05" />
+      <inertia
+        ixx="3.15259294026634E-08"
+        ixy="5.70882465640418E-24"
+        ixz="2.50746644739091E-40"
+        iyy="6.02880426683312E-08"
+        iyz="-2.76618777943199E-40"
+        izz="3.15259294026634E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/rear_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_urdf_fourwheeler/meshes/rear_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
