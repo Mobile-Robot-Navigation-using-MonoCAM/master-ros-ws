@@ -1,0 +1,24 @@
+<launch>
+    <!-- run pointcloud_to_laserscan node -->
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan"> 
+        <remap from="cloud_in" to="/stella_slam/pointcloud"/>
+        <remap from="scan" to="/camera/scan"/>
+        <rosparam>
+            target_frame: map # Leave disabled to output scan in pointcloud frame
+            transform_tolerance: 0.01
+            min_height: 0.0
+            max_height: 1.0
+            angle_min: -1.5708 # -M_PI/2
+            angle max: 1.5708 # M_PI/2
+            angle increment: 0.0087 # M_PI/360.0 (every degreee)
+            scan_time: 0.3333
+            range_min: 0.45
+            range max: 4.0
+            use_inf: true
+            # Concurrency level, affects number of pointclouds queued for processing and number of threads use
+            #0: Detect number of cores
+            #1: Single threaded
+            # 2->inf: Parallelism level concurrency_level: 1
+        </rosparam>
+    </node>
+</launch>
