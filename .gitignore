@@ -1,6 +1,8 @@
 # ignore build and devel file:
 */build/
 */devel/
+*/logs/
+*/.catkin_tools/
 
 #catkin files:
 */.catkin_workspace
@@ -8,3 +10,6 @@
 
 # ignore IDE files:
 .vscode/
+
+LICENSE
+LICENSE.fork
