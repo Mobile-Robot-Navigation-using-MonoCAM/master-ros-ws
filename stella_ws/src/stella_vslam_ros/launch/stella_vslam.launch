@@ -1,0 +1,12 @@
+<launch>
+    <arg name="orb_vocab" default="$(find stella_vslam_ros)/orb_vocab.fbow" />
+    <!-- <arg name="camera_info" default="/home/goku/Projects/major_project/ros_ws/mono_cam.yaml" /> -->
+    <arg name="camera_info" default="$(find stella_vslam_ros)/monocamera.yaml" />
+    <arg name="map_file" default="$(find stella_vslam_ros)/map.msg" />
+
+    <node 
+        name="stella_slam" pkg="stella_vslam_ros" type="run_slam" output="screen" 
+        args="-v $(arg orb_vocab) -c $(arg camera_info) --map-db-out $(arg map_file)">
+        <param name = "publish_pointcloud" value = "true"/>
+    </node> 
+</launch>
