@@ -11,5 +11,7 @@
 # ignore IDE files:
 .vscode/
 
+map.msg
+
 LICENSE
 LICENSE.fork
